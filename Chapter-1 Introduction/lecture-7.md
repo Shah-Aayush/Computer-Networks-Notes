@@ -66,6 +66,7 @@
 	1. Internet
 	2. ARPANET
 		> **IMP** : The Interface Message Processor was the packet switching node used to interconnect participant networks to the ARPANET from the late 1960s to 1989. It was the first generation of gateways, which are known today as routers. 
+		> Nowadays, we call IMP as **Router**.
 	3. NSFNET		*[Not covered in this course]*
 	4. Third-generation mobile phone networks		*[Not covered in this course]*
 	5. RFID and sensor networks		*[Not covered in this course]*
