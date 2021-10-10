@@ -38,7 +38,7 @@
 	3. Session
 	4. Transport
 	5. Network 
-	6. Data link'
+	6. Data link
 	7. Physical 
 
 - Two computers in different networks can only be connected using a **router**. cannot use a hub or switch.
