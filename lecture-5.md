@@ -60,6 +60,7 @@ _Extra information can be added at every layer_
 		- Upper layer are service user of lower layer
 		- Service is kind of facility 
 		- The way you access services is called **servicePRIMITIVES**
+---
 |Primitive|Meaning|
 |--|--|
 | Listen | Block waiting for an incoming connection |
