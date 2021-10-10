@@ -1,5 +1,8 @@
 # Lecture 3
 
+### [Lecture link](https://nirmauni.webex.com/nirmauni/ldr.php?RCID=c0f2f769ce81496806e356e8005e1fa6)
+### Password : `Vj3yK3p3`
+
 - Ethernet is always **Broadcasting**.
 - interconnected processors by scale : 
 	1. Personal Area Network		*1-10m*

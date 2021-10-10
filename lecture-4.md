@@ -1,4 +1,6 @@
 # Lecture 4
+### [Lecture link](https://nirmauni.webex.com/nirmauni/ldr.php?RCID=a932c5941fd38e9463effac01b834633)
+### Password : `HpJPPjm4`
 
 - Default gateway is the ip address of the router
 - ISP : Internet service provider *[blazenet, reliance, jio, gtpl]*
