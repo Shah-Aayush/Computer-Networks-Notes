@@ -1,7 +1,9 @@
 # Lecture 3
 
-### [Lecture link](https://nirmauni.webex.com/nirmauni/ldr.php?RCID=c0f2f769ce81496806e356e8005e1fa6)
-### Password : `Vj3yK3p3`
+| Video Lecture | Password |
+|--|--|
+| [Lecture link](https://nirmauni.webex.com/nirmauni/ldr.php?RCID=c0f2f769ce81496806e356e8005e1fa6) | `Vj3yK3p3` |
+---
 
 - Ethernet is always **Broadcasting**.
 - interconnected processors by scale : 
