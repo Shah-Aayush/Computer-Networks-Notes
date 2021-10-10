@@ -45,12 +45,12 @@
 - TCP/IP ref models : 
 	> The tcp/ip ref model with some protocols
 	Protocols : 
-		- Application : `HTTP`, `SMTP`, `RTP`, `DNS`
-		- Transport : `TCP`, `UDP`
-		- Internet : `IP`, `ICMP`
-			> ICMP is helper protocol to IP
-			> ICMP is not full-fledged network protocol. but its support protocol of IP.
-		- Link : `DSL`, `SONET`, `802.11`, `Ethernet`
+	- Application : `HTTP`, `SMTP`, `RTP`, `DNS`
+	- Transport : `TCP`, `UDP`
+	- Internet : `IP`, `ICMP`
+		> ICMP is helper protocol to IP
+		> ICMP is not full-fledged network protocol. but its support protocol of IP.
+	- Link : `DSL`, `SONET`, `802.11`, `Ethernet`
 
 - Hybrid reference model which we will  be using  :
 	5 Application
