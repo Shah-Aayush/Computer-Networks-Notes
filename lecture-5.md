@@ -54,13 +54,14 @@ _Extra information can be added at every layer_
 	|Connection less |Request-reply | Database query|
 	
 	
-	> Service primitives : Six service primitives that provide a simple connection-oriented service
-		- Layer 3 is providing service to layer 4 for routing
-		- So lower layer is always stay  to offer certain services to upper layer.
-		- Upper layer are service user of lower layer
-		- Service is kind of facility 
-		- The way you access services is called **servicePRIMITIVES**
 ---
+Service primitives : Six service primitives that provide a simple connection-oriented service
+- Layer 3 is providing service to layer 4 for routing
+- So lower layer is always stay  to offer certain services to upper layer.
+- Upper layer are service user of lower layer
+- Service is kind of facility 
+- The way you access services is called **servicePRIMITIVES**
+
 |Primitive|Meaning|
 |--|--|
 | Listen | Block waiting for an incoming connection |
