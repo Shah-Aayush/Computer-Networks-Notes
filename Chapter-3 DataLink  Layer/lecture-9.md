@@ -87,8 +87,22 @@
 	- trouble with this algorithm is that when the count is incorrectly received the destination will get out of synch with transmission.
 		- destination may be able to detect that the frame is in error but it does not have a means *(in this algorithm)* how to correct it.
 - Flag bytes with byte stuffing
-	- This methods gets around the boundary  detection of the frame by having each frame appended by the start and  end special bytes.
+	- This methods gets around the boundary detection of the frame by having each frame appended by the start and end special bytes.
 	- if they are the same *(beginning and ending byte in the frame)* they are called **Flag byte**.
 	- If the actual data contains a byte that is identical to the **FLAG** byte *(e.g. picture, data stream etc.)* the convention that can be used is to have escape character inserted just before the *FLAG* character.
-- Flag bits with bit stuffing
+> <u>*{Lecture 10 starts from here...}*</u>
+- Flag bits with bit stuffing	
+	- This methods achieves the same thing as Byte stuffing method by using Bits *(1)* instead of Bytes *(8 bits)*
+	- It was developed for high-level data link control *(HDLC)* protocol.
+	- Each frames begins and ends with a special bit pattern : 
+		- `01111110` or `0x7E` <- Flag Byte		*{In message; not in headers/tailors}*
+		- Whenever the sender's data link layer encounters five consecutive 1s in the data it automatically stuffs a 0 bit into the outgoing bit stream
+		- USB uses bit stuffing
 - Physical layer coding violations.
+	- Violating Physical Layer encoding : 
+		- Many networks uses encoding techniques like Manchester, differential Manchester encoding.
+			- **Differential Manchester encoding** is a line code in digital frequency modulation in which data and clock signals are combined to form a single two-level self-synchronizing data stream.
+			- **Manchester code** is a line code in which the encoding of each data bit is either low then high, or high then low, for equal time. It is a self-clocking signal with no DC component. Consequently, electrical connections using a Manchester code are easily galvanically isolated.
+			> Every bit in manchester and differential manchester encoding has high-low & Low-high pairs
+		- These techniques have transition in middle of each bit.
+		- Violating this and using a high-high or low-low pair of indicating beginning or end of frame.
