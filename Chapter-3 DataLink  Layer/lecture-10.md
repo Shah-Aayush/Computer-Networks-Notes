@@ -117,3 +117,44 @@
 - Check bits: The bit positions that are powers of 2 (p1, p2, p4, p8, p16, ...). 
 - The rest of bits (m3, m5, m6, m7, m9, ...) are filled with m data bits. 
 - Example of the Hamming code with m = 7 data bits and r = 4 check bits is given in the next slide. 
+
+	1. Hamming code
+		> for error correction
+		- 7 bit hamming code consists : 4 data bits + 3 parity bits
+			parity bits will be at position of 2^n.
+			- 2^0 = 1 -> p1
+			- 2^1 = 2 -> p2
+			- 2^2 = 4 -> p4
+				
+				|Position | 7 | 6 | 5 | 4 | 3|  2 | 1|
+				|--|--|--|--|--|--|--|--|
+				| Bit | d3 | d2 | d1 | p2|d0 |p1 |p0|
+			
+		- p2 = d3 XOR d2 XOR d1	{skip 4 take 4}
+		- p1 = d3 XOR d2 XOR d0	{skip 2 take 2}
+		- p0 = d3 XOR d1 XOR d0	{skip 1 take 1}
+	
+	2. Cyclic Redundancy Check 
+		- Unlike checksum scheme, which is based on addition, CRC is based on binary division.
+		- In CRC, a sequence of redundant bits, called cyclic redundancy check bits, are appended to the end of data unit so that the resulting data unit becomes exactly divisible by a second, predetermined binary number.
+		- At the destination, the incoming data unit is divided by the same number. If at this step there is no remainder, the data unit is assumed to be correct and is therefore accepted.
+		- A remainder indicates that the data unit has been damaged in transit and therefore must be rejected.
+		
+		![CRC](https://media.geeksforgeeks.org/wp-content/uploads/detect14.jpg)
+	
+	3. Checksum
+		- In checksum error detection scheme, the data is divided into k segments each of m bits.
+		- In the sender’s end the segments are added using 1’s complement arithmetic to get the sum. The sum is complemented to get the checksum.
+		- The checksum segment is sent along with the data segments.
+		- At the receiver’s end, all received segments are added using 1’s complement arithmetic to get the sum. The sum is complemented.
+		- If the result is zero, the received data is accepted; otherwise discarded.
+		
+		![Checksum](https://media.geeksforgeeks.org/wp-content/uploads/detect13.jpg)
+	
+## IN DETAIL TOPIC DISCUSSION : 
+
+| Topic | Video |
+| -- | -- |
+| Hamming code | **[Youtube video link](https://youtu.be/V5Iu52tbZEQ)** |
+| Cyclic Redundancy Check *(CRC)* | **[Youtube video link](https://youtu.be/5Q-Yv6_0Qcw)** |
+| Checksum | **[Youtube video link](https://youtu.be/AtVWnyDDaDI)** |
