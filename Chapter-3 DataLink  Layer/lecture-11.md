@@ -34,6 +34,8 @@
 - Protocol.h file contains all required variables so it will be included in every protocol's file.
 
 - **Protocol.h file :**
+	- Some definitions needed in the protocols to follow. These definitions are located in the file protocol.h.
+	
 	```c
 	#define MAX_PKT 1024                    /* packet size in bytes */
 	
@@ -91,4 +93,5 @@
 	/* macro inc */
 	#define inc(k) if (k < MAX_SEQ) k = k + 1; else k = 0
 	```
+	
 - **Piggybacking** : The receiver waits until its network layer passes in the next data packet. The delayed acknowledgment is then attached to this outgoing data frame. This technique of temporarily delaying the acknowledgment so that it can be hooked with next outgoing data frame is known as piggybacking
