@@ -2,6 +2,8 @@
 
 [Watch Video Lecture](https://youtu.be/11KHGdzvdEY)
 
+![Cisco Packet Tracer snapshot](./assets/lab1.png "Practice")
+
 - Hub
 	- It broadcast the message
 - Switch 
