@@ -29,10 +29,11 @@
 
 ## Subnetting
 
-1. Not Interconnected Subnet 
+### 1. Not Interconnected Subnet 
 
 ![Cisco Packet Tracker snapshot](./assets/2.png "Not Interconnected Subnet")
 
+- Creating Subnets
 	- Here we are using **`CLASS A`** address
 		- 32 bits
 			- 8 bits network
@@ -62,11 +63,11 @@
 		- As network address of one subnet's PC and another subnet's PC are different, the message will not be successful.
 	- We cannot use same IP in different subnets.
 
-2. Interconnected Subnets
+### 2. Interconnected Subnets
 
 ![Cisco Packet Tracker snapshot](./assets/3.png "Interconnected Subnets")
 	
-	
+- Creating connected Subnets
 	- Separate two subnets with individual switches.
 	- For this, we need layer 3 device router.
 	- Router has 2 interface : 
@@ -103,26 +104,28 @@
 
 ![Cisco Packet Tracker snapshot](./assets/4.png "VLAN")
 
-- Virtual LAN is Better than subnetting.
-- Here there will be more configuration in switch.
-- By default every switch has VLAN number 1 `Default` created.
-	- All ports in that switch are member of that VLAN ports by default.
-- In switch, There are interfaces 
-	- Each interface has VLAN port which can work like `Access` or `Trunk`
-	- for `Access`, it can connect to an end device. by default every port is `Access`. to this port we normally connect computers.
-- Here two networks : 
-	1. `CS` : Computer Department
-	2. `ME` : Mechanical Department
+- Creating VLAN
+	- Virtual LAN is Better than subnetting.
+	- Here there will be more configuration in switch.
+	- By default every switch has VLAN number 1 `Default` created.
+		- All ports in that switch are member of that VLAN ports by default.
+	- In switch, There are interfaces 
+		- Each interface has VLAN port which can work like `Access` or `Trunk`
+		- for `Access`, it can connect to an end device. by default every port is `Access`. to this port we normally connect computers.
+	- Here two networks : 
+		1. `CS` : Computer Department
+		2. `ME` : Mechanical Department
+		
 - **Configure switch**
-	- `Switch 1` config
-		- go to FastEthernet `0/0`,`0/1`,`0/2` select network port `Access` and VLAN `10 CS`
-	- `Switch 2` config
-		- go to FastEthernet `0/11`,`0/12`,`0/13` select network port `Access` and VLAN `20 ME`
-- After doing this, we can transfer messages inside one network. we still cannot transfer messages from one network to another network
-	- Link b/w switch 0 and any device from pc0,1,2 can only carry `VLAN 10` traffic. as switch port is set to `Access`,`VLAN 10`.
-	- Link b/w switch 1 and any device from pc11,12,13 can only carry `VLAN 20` traffic. as switch port is set to `Access`,`VLAN 20`.
+		- `Switch 1` config
+			- go to FastEthernet `0/0`,`0/1`,`0/2` select network port `Access` and VLAN `10 CS`
+		- `Switch 2` config
+			- go to FastEthernet `0/11`,`0/12`,`0/13` select network port `Access` and VLAN `20 ME`
+	- After doing this, we can transfer messages inside one network. we still cannot transfer messages from one network to another network
+		- Link b/w switch 0 and any device from pc0,1,2 can only carry `VLAN 10` traffic. as switch port is set to `Access`,`VLAN 10`.
+		- Link b/w switch 1 and any device from pc11,12,13 can only carry `VLAN 20` traffic. as switch port is set to `Access`,`VLAN 20`.
 	
-- **Without changing the IP relocate PC from one network to another network**
+- ## **Without changing the IP relocate PC from one network to another network**
 
 	![Cisco Packet Tracker snapshot](./assets/5.png "<sample text>")
 
@@ -138,7 +141,7 @@
 	- *So for communication, There should be link of same VLAN on path from one computer to another computer*
 	- **NO CHANGE IN IP CONFIGURATION REQUIRED here**
 	
-- **Make VLAN port from `ACCESS` to `TRUNK`**
+- ## **Make VLAN port from `ACCESS` to `TRUNK`**
 
 	![Cisco Packet Tracker snapshot](./assets/6.png "TRUNK")
 
@@ -146,7 +149,7 @@
 	- If you make port as `trunk` then you **CANNOT** connect computer. you can  only connect `switch`. If done so, the computer will not be member of any VLAN.
 	- Here communication is only done WITHIN the VLANs.
 
-- **Communication across the VLAN using ROUTER**
+- ## **Communication across the VLAN using ROUTER**
 	
 	![Cisco Packet Tracker snapshot](./assets/7.png "ROUTER")
 	
