@@ -32,7 +32,7 @@
 	
 |How sliding window works|
 |---|
-|![](./assets/sliding_window_protocol.png)|
+|![](./Images/sliding_window_protocol.png)|
 
 - When window slides ?
 	- as ACK is received for **SENDER**
@@ -112,4 +112,4 @@
 		
 | Working |
 |---|
-|![](./assets/working_of_swp.png "How sliding window protocols work?")|
+|![](./Images/working_of_swp.png "How sliding window protocols work?")|
