@@ -204,7 +204,7 @@
 	
 	
 	
-	-Since a small frame header is desirable, the question arises: **What is the minimum number of bits needed for the sequence number?**
+	- Since a small frame header is desirable, the question arises: **What is the minimum number of bits needed for the sequence number?**
 		- The number of bits require to store the sequence numbers will depend on the environment.
 		- <u>MINIMUM `1 bit` is sufficient for this!</u>
 	
@@ -286,9 +286,3 @@
 
 - Protocol number 1 to 3 are SIMPLEX protocols and next protocol number 4 to 6 are DUPLEX protocols.
 	- So up to now, we were writing two different functions for sender and receiver but from now onwards, we will write only one function which works for both sender and receiver
-	
-- ## Sliding Window Protocol
-	- Assuming duplex communication, both sides transmits to each other
-	- When machine A sends to data to B, it also hooks up the acknowledgement to be sent to B with data packet. It is called as piggybacking
-	- Wait for some time before sending ack so that if data frame generated can be sent with ack
-	- How long to wait? If too long other side will timeout and retransmit and too short, leads to overhead of sending separate ack and data
