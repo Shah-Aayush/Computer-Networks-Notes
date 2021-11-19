@@ -10,11 +10,11 @@
 		- It consists of having the source machine send independent frames to the destination machine without having the destination machine acknowledge them.
 		- In all the communication channel where real time operation is more important than quality of transmission.
 		- Example : Ethernet, Voice over IP etc.
-		> No reliability guarantee
-		> Timely delivery of packet is important.
-		> No delay
-		> No retransmission
-		> Live streaming
+			- No reliability guarantee.
+			- Timely delivery of packet is important.
+			- No delay.
+			- No retransmission.
+			- Live streaming.
 	- Acknowledged connectionless service
 		- Each frame sent by the data link layer is acknowledged and the sender knows if a specific frame has been received or lost.
 		- Typically the protocol uses a specific time period that is has passed without getting acknowledgment it will re-send the frame.
@@ -41,7 +41,7 @@
 		```
 		
 - Example : 
-	``
+	```
 	Frame length = 1000 byte
 	DataRate/Bandwidth = 1 mBps
 	Transmission time : FL/DR = 10^3/10^6 = 10^-3 sec
@@ -50,7 +50,7 @@
 	When another frame is loading, the time after : 6.001 sec *{0.001 secs for transmission + 6 secs for travelling + assuming acknowledgement time is ZERO}*
 	Effective data rate you could achieve : 1000/6 bytes/second [1000 bytes per 6 seconds so 1000/6 bytes per second : *Data transmitted in this 6 seconds*]
 	Efficiency : 166/10^6 *Efficiency will be 100% here when we send 10^6 bytes per second. but here we can only send 166.6 data per second so it will be too low :( | This is NOT ACCEPTABLE*
-	``
+	```
 	- This is **STOP AND WAIT PROTOCOL** 
 	- Very low efficiency
 
@@ -84,7 +84,7 @@
 - Byte counts
 	- It uses a field in the header to specify the number of bytes in the frame
 	- Once the header information is being received it will be used to determine end of the frame.
-	- trouble with this algorithm is that when the count is incorrectly received the destination will get out of synch with transmission.
+	- trouble with this algorithm is that when the count is incorrectly received the destination will get out of sync with transmission.
 		- destination may be able to detect that the frame is in error but it does not have a means *(in this algorithm)* how to correct it.
 - Flag bytes with byte stuffing
 	- This methods gets around the boundary detection of the frame by having each frame appended by the start and end special bytes.

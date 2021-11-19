@@ -32,7 +32,7 @@
 - Two machines are connected by a communication channel that acts conceptually like a wire *(e.g. telephone line, coaxial cable, or wireless channel)*
 - Essential property of a channel that makes it **Wire like** *(Ideal channel | Practically impossible)* connection is that the bits are delivered in exactly the same order in which they are sent.
 	> less errors in case of fiber optics
-- For ideal channel *(No distortion, unlimited bandwidth and no delay)* the3 job of datalink layer be trivial *(unimportant)*
+- For ideal channel *(No distortion, unlimited bandwidth and no delay)* the job of datalink layer be trivial *(unimportant)*
 - However, limited bandwidth, distortion and delay makes this job very difficult
 	- No distortion : No need of error control
 	- unlimited bandwidth : No need of flow control
