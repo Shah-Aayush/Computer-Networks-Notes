@@ -271,7 +271,8 @@
 
 - ADSL Protocol stacks 
 	- Here : AAL5 + ATM is protocol stack
-	
+---
+
 - Datalink layer has two parts 
 	- LLC : Logical Link layer	(which is covered here)
 	- MAC : Medium Access Control	(will be covered in 4th chapter)
