@@ -61,4 +61,3 @@
 |Contention Period|
 |---|
 |![](./assets/contention.png)|
-
