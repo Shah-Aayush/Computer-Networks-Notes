@@ -96,6 +96,7 @@
 - Ideally value of P should be dynamic.
 
 - P-persistent: Let T = end-to-end propagation delay
+	> Here T is **propagation delay**. its actually one slot.
 	- If channel is idle then transmit packet
 	- If channel busy then toss coin [with
 	P(heads) = P]
