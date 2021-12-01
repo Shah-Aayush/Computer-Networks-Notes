@@ -138,7 +138,7 @@
 
 |Gigabit table|
 |---|
-|![](./assets/gigabit_table.png.png)|
+|![](./assets/gigabit_table.png)|
 	
 - wave length is described in micro
 - STP : Sheilded Twisted Pairs
