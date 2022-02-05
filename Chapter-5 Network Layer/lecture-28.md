@@ -130,6 +130,18 @@ forwarding : per packet base execution; see the destination ip add; refer routin
 						state[i].length = state[k].length + dist[k][i]; 
 					}
 				}
-		}
+				/* Find the tentatively labeled node with the smallest label. */ 
+				k = 0; min = INFINITY; 
+				for (i = 0; i < n; i++) 
+					if (state[i].label == tentative && state[i].length < min) { 
+						min = state[i].length; 
+						k = i; 
+						state[k].label = permanent; 
+					}
+		} while (k != s); 
+		/* Copy the path into the output array. */ 
+		i = 0; k=s; 
+		do {path[i++] = k; k = state[k].predecessor; } while (k >= 0); 
 
+		}
 		```
