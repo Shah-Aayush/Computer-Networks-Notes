@@ -1,4 +1,4 @@
-# LAB 1
+# LAB 3
 
 [Watch Video Lecture](https://youtu.be/11KHGdzvdEY)
 
@@ -29,3 +29,5 @@
 	- through DNS, we can name a particular ip address website and then we can type that website name and can access that webpage.
 	- We have to turn on the DNS service of DNS server to enable it.
 	- After adding DNS server's ip in main server, we have to manually re-switch to `DHCP` from doing `static` again from `DHCP`. so that it will be updated with latest DNS server information.
+	
+- to connect pc to hum we need `copper straight through` cable.
