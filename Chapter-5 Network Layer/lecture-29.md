@@ -46,7 +46,7 @@
 	• Set distance/cost metric to each neighbor.
 	• Construct packet telling all learned. | only neighbours information is carried.
 	• Send packet to, receive packets from other routers. | flooding
-	• Compute shortest path to every other router.  |  dijkstra's algo applied
+	• Compute shortest path to every other router.  |  dijkstra's algo applied for finding shortest path
 	```
 	
 	
