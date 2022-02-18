@@ -66,7 +66,7 @@
 			- IN high load, almost every frame is ready to transmit something.
 			
 		- Issues
-			- Stations' access to the network is unfair: That is, if station i and station j both want to transmit, and i < j, then station i always first to transmit.
+			- Stations' access to the network is unfair: That is, if station i and station j both want to transmit, and i > j, then station i always first to transmit.
 			- low numbered stations have to wait longer than high numbered stations for the reservation to complete.
 			- Efficiency: at low load, the protocol efficiency is low.
 
