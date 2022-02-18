@@ -266,7 +266,7 @@
     void receiver3(void)
     {
         seq_nr frame_expected;
-        frame_r, s;
+        frame r, s;
         event_type event;
         frame_expected = 0;
         while (true) {
