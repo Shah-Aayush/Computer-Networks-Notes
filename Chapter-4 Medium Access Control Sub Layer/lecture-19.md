@@ -42,7 +42,7 @@
 - points 
 	- here sequence wise transmission will take place. 
 	- here the frames which have to transmit something, will fill 1 in them. like frame 1, 3, 7 in first reservation window.
-	- first 1 then 3 then 7 will transmit. after this slot and when all frames were transmitted, another new slot will be generated.
+	- first 7 then 3 then 1 will transmit. after this slot and when all frames were transmitted, another new slot will be generated.
 	- In the third reservation window, there is `lower load`, in which only one station wants to transmit but there are N stations waiting for it. So here large over head is also present (reservation time wasted).
 	
 	- Performance
