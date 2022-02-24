@@ -236,7 +236,7 @@
 	going to next data item.
 	*/
 	/* Protocol 3 (PAR) allows unidirectional data flow over an unreliable channel. */
-    #define MAX SEQ 1 /* must be 1 for protocol 3 */	//MAX was defined in protocol 1
+    #define MAX_SEQ 1 /* must be 1 for protocol 3 */	//MAX was defined in protocol 1
     typedef enum {frame_arrival, cksum_err, timeout} event_type;
     #include "protocol.h"
     void sender3(void)
@@ -266,7 +266,7 @@
     void receiver3(void)
     {
         seq_nr frame_expected;
-        frame_r, s;
+        frame r, s;
         event_type event;
         frame_expected = 0;
         while (true) {
